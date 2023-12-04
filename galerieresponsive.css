@@ -1,0 +1,104 @@
+.container {
+    max-width: 1460px;
+    width: 98%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 60px;
+
+}
+.box {
+    height: 165px;
+    background-color: rgb(110, 164, 246);
+    border-radius: 10px;
+    align-items: end;
+    box-shadow: 1px 1px 1px rgb(140, 138, 138);
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 2fr);
+    }
+   
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header {
+        text-align: center;
+    }
+    .box {
+        height: 200px;
+        background-color: rgb(110, 164, 246);
+        border-radius: 10px;
+        align-items: end;
+        box-shadow: 1px 1px 1px rgb(140, 138, 138);
+    
+    }
+    .container {
+        max-width: 800px;
+        width: 70%;
+        margin: 0 auto;
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 60px;
+    
+    }
+    footer {
+        background-color: white;
+        align-content: center;
+        padding: 6px;
+        border-bottom-right-radius: 10px ;
+        border-bottom-left-radius: 10px;
+       
+        margin: 10px black;
+        box-shadow: 1px 1px 1px rgb(140, 138, 138);
+    
+        text-align: center;
+    
+    }
+}
+
+header, p {
+    padding: 18px;
+    left: 100px;
+    top: 150px;
+    border-left: 200px;
+}
+img {
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+}
+ header {
+    font-size: 30px;
+ }
+p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+footer {
+    background-color: white;
+    align-content: center;
+    padding: 6px;
+    border-bottom-right-radius: 10px ;
+    border-bottom-left-radius: 10px;
+   
+    margin: 10px black;
+    box-shadow: 1px 1px 1px rgb(140, 138, 138);
+
+    text-align: center;
+
+}
